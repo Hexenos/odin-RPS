@@ -1,3 +1,13 @@
+function getHumanChoice() {
+    // Prompt user input
+    let choice = prompt("Choose an option: rock, paper, or scissors");
+    // Convert user input to value
+    return(choice);
+    // Return value
+}
+
+console.log(getHumanChoice());
+
 function getComputerChoice() {
     let choiceRandom = Math.random();
 
@@ -12,13 +22,3 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice());
-
-function getHumanChoice() {
-    // Prompt user input
-    let choice = prompt("Choose an option: rock, paper, or scissors");
-    // Convert user input to value
-    return(choice);
-    // Return value
-}
-
-console.log(getHumanChoice());
