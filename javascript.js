@@ -1,9 +1,7 @@
 function getHumanChoice() {
-    // Prompt user input
     let choice = prompt("Choose an option: Rock, Paper, or Scissors").toLowerCase();
-    // Convert user input to value
+
     return(choice);
-    // Return value
 }
 
 
@@ -17,7 +15,6 @@ function getComputerChoice() {
     } else {
         return("rock");
     }
-    
 }
 
 
@@ -28,7 +25,7 @@ function playGame() {
     function playRound(choice, choiceRandom) {
         console.log(choice);
         console.log(choiceRandom);
-         // Determine value hierarchy
+
          if (choice === choiceRandom) {
              console.log("It's a tie!");
          } else if (choice === "rock" && choiceRandom === "scissors") {
@@ -42,11 +39,12 @@ function playGame() {
              console.log("You win! Paper beats Rock.");
          } else {
              computerScore++;
-             console.log(`You lose! ${choiceRandom.charAt(0).toUpperCase() + choiceRandom.slice(1)} beats ${choice.charAt(0).toUpperCase() + choice.slice(1)}`);
+             console.log(`You lose! ${choiceRandom.charAt(0).toUpperCase() + choiceRandom.slice(1)} beats ${choice.charAt(0).toUpperCase() + choice.slice(1)}.`);
          } 
-         // Compare both parameters
-         // Output winner of round
-         // Increase score for winning side
+
+         console.log(`Your score is: ${humanScore}`);
+         console.log(`Computer score is: ${computerScore}`);
+         console.log(" ");
      }
 
      for (let i = 0; i < 5 ;i++) {
